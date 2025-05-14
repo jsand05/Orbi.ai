@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbi.ia - Generador de Viajes Personalizados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Orbi.ia</h1>
+    <p>Genera tu itinerario de viaje personalizado</p>
+  </header>
+  <form id="itinerarioForm">
+    <label for="destino">Destino</label>
+    <input type="text" id="destino" placeholder="Ej. París" required>
+
+    <label for="presupuesto">Presupuesto (USD)</label>
+    <input type="number" id="presupuesto" placeholder="Ej. 2000" required>
+
+    <label for="fechas">Fechas del viaje</label>
+    <input type="text" id="fechas" placeholder="Ej. 10-15 Mayo 2025" required>
+
+    <label for="intereses">Intereses (Ej. cultural, relax, aventura)</label>
+    <input type="text" id="intereses" required>
+
+    <label for="nombreCliente">Tu nombre</label>
+    <input type="text" id="nombreCliente" required>
+
+    <button type="submit">Generar Itinerario</button>
+  </form>
+
+  <h2>Itinerario Generado:</h2>
+  <div id="itinerario"></div>
+  <div id="linkDePago"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
